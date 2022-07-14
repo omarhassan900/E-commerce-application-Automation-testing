@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="3" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="12" time="123.252">
+<testcase classname="Login Feature" name="user login with valid user and password" time="13.079">
+<system-out><![CDATA[When navigate to login page.................................................passed
+When user try to login with valid user name and password....................passed
+Then login done successfully................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Change Currency Feature" name="logged in user change currency from US to Euro" time="10.809">
+<system-out><![CDATA[When navigate to login page.................................................passed
+And user try to login with valid user name and password.....................passed
+And change the currency.....................................................passed
+Then currency changed successfully..........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Search Feature" name="Logged User could search for any product" time="10.213">
+<system-out><![CDATA[When navigate to login page.................................................passed
+And user try to login with valid user name and password.....................passed
+And search for any product..................................................passed
+Then products appeared successfully.........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Select Category Feature" name="Logged user could select different Categories" time="11.977">
+<system-out><![CDATA[When navigate to login page.................................................passed
+And user try to login with valid user name and password.....................passed
+And select random category..................................................passed
+And select sub category.....................................................passed
+Then category selection done successfully...................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Slider Featuer" name="Slider test" time="6.982">
+<failure message="expected [true] but found [false]" type="java.lang.AssertionError"><![CDATA[When user first select slider...............................................passed
+Then user get navigated to first item url...................................failed
+
+StackTrace:
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertTrue(Assert.java:45)
+	at org.testng.Assert.assertTrue(Assert.java:55)
+	at org.example.StepDefinitions.D06_homeSlidersStepDef.url_changedf_success(D06_homeSlidersStepDef.java:20)
+	at ✽.user get navigated to first item url(file:///C:/Users/pc/IdeaProjects/E-commerce/src/main/resources/features/F06_homeSliders.feature:9)
+]]></failure>
+</testcase>
+<testcase classname="Slider Featuer" name="Slider test 2" time="6.296">
+<failure message="expected [true] but found [false]" type="java.lang.AssertionError"><![CDATA[When user second select slider..............................................passed
+Then user get navigated to item url.........................................failed
+
+StackTrace:
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertTrue(Assert.java:45)
+	at org.testng.Assert.assertTrue(Assert.java:55)
+	at org.example.StepDefinitions.D06_homeSlidersStepDef.url_changeds_success(D06_homeSlidersStepDef.java:32)
+	at ✽.user get navigated to item url(file:///C:/Users/pc/IdeaProjects/E-commerce/src/main/resources/features/F06_homeSliders.feature:13)
+]]></failure>
+</testcase>
+<testcase classname="Follow us Feature" name="Follow us on twitter" time="8.135">
+<system-out><![CDATA[When user click on twitter link.............................................passed
+Then navigate correctly to twitter page.....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Follow us Feature" name="Follow us on facebook" time="7.752">
+<system-out><![CDATA[When user click on facebook link............................................passed
+Then navigate correctly to facebook page....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Follow us Feature" name="Follow us on youtube" time="11.733">
+<system-out><![CDATA[When user click on youtube link.............................................passed
+Then navigate correctly to youtube page.....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Follow us Feature" name="Follow us on rss" time="8.371">
+<failure message="Index: 1, Size: 1" type="java.lang.IndexOutOfBoundsException"><![CDATA[When user click on rss link.................................................passed
+Then navigate correctly to rss page.........................................failed
+
+StackTrace:
+java.lang.IndexOutOfBoundsException: Index: 1, Size: 1
+	at java.util.ArrayList.rangeCheck(ArrayList.java:659)
+	at java.util.ArrayList.get(ArrayList.java:435)
+	at org.example.StepDefinitions.D07_followUsStepDef.navigate_to_rss_success(D07_followUsStepDef.java:71)
+	at ✽.navigate correctly to rss page(file:///C:/Users/pc/IdeaProjects/E-commerce/src/main/resources/features/F07_followUs.feature:20)
+]]></failure>
+</testcase>
+<testcase classname="Wishlist Feature" name="Logged user could add different products to Wishlist" time="14.033">
+<system-out><![CDATA[When navigate to login page.................................................passed
+And user try to login with valid user name and password.....................passed
+And select random category..................................................passed
+And select sub category.....................................................passed
+And select random item......................................................passed
+And press add to wishlist button............................................passed
+Then item is added successfully to the wishlist.............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Shopping Cart Feature" name="Logged user could add different products to Shopping cart" time="13.413">
+<system-out><![CDATA[When navigate to login page.................................................passed
+And user try to login with valid user name and password.....................passed
+And select random category..................................................passed
+And select sub category.....................................................passed
+And select random item......................................................passed
+And add item to chart.......................................................passed
+Then item is added successfully.............................................passed
+]]></system-out>
+</testcase>
+</testsuite>
