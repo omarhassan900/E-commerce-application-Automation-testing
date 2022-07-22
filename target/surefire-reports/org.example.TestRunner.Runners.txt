@@ -1,13 +1,13 @@
 -------------------------------------------------------------------------------
 Test set: org.example.TestRunner.Runners
 -------------------------------------------------------------------------------
-Tests run: 12, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 125.296 s <<< FAILURE! - in org.example.TestRunner.Runners
-org.example.TestRunner.Runners.runScenario  Time elapsed: 7.022 s  <<< FAILURE!
+Tests run: 12, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 174.391 s <<< FAILURE! - in org.example.TestRunner.Runners
+org.example.TestRunner.Runners.runScenario  Time elapsed: 6.365 s  <<< FAILURE!
 java.lang.AssertionError: expected [true] but found [false]
 
-org.example.TestRunner.Runners.runScenario  Time elapsed: 6.315 s  <<< FAILURE!
+org.example.TestRunner.Runners.runScenario  Time elapsed: 7.302 s  <<< FAILURE!
 java.lang.AssertionError: expected [true] but found [false]
 
-org.example.TestRunner.Runners.runScenario  Time elapsed: 8.389 s  <<< FAILURE!
+org.example.TestRunner.Runners.runScenario  Time elapsed: 7.773 s  <<< FAILURE!
 java.lang.IndexOutOfBoundsException: Index: 1, Size: 1
 
